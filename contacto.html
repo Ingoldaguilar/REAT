@@ -30,6 +30,55 @@
 
     <main class="contenedor seccion">
         <h1>Contacto</h1>
+        <form action="" method="post" class="formulario">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="Tu Correo electrónico" required><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono" required><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" placeholder="Tu Mensaje" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información sobre Propiedad</legend>
+            <label for="vende-compra">Vende o Compra:</label><br>
+            <select id="vende-compra" name="vende-compra" required>
+                <option value="">-- Seleccione --</option>
+                <option value="vende">Vende</option>
+                <option value="compra">Compra</option>
+            </select><br>
+
+            <label for="cantidad">Cantidad:</label><br>
+            <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contacto</legend>
+            <h4>¿Cómo desea ser contactado?</h4>
+            <label for="telefono-contacto">Teléfono</label>
+            <input type="radio" id="telefono-contacto" name="contacto" value="telefono" required><br>
+
+            <label for="email-contacto">E-mail</label>
+            <input type="radio" id="email-contacto" name="contacto" value="email"><br>
+
+            <div id="contacto-telefono">
+                <label for="fecha">Fecha:</label><br>
+                <input type="date" id="fecha" name="fecha"><br>
+
+                <label for="hora">Hora:</label><br>
+                <input type="time" id="hora" name="hora"><br>
+            </div>
+        </fieldset>
+
+        <input type="submit" class="boton-amarillo"></input>
+    </form>
     </main>
     
     <footer class="footer seccion">
